@@ -1,0 +1,1 @@
+Files with genetic dataset and coordinates used in BAPS to estimate number of populations and individual assignment coefficients for all Scinax fuscomarginatus samples. Samples are organized according to Appendix S1 in Supporting Information.

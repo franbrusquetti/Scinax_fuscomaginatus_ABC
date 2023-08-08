@@ -1,0 +1,1 @@
+Files with genetic dataset (mitochondrial and nuclear) and coordinates used in GENELAND to estimate number of populations and individual assignment coefficients for all Scinax fuscomarginatus samples. Samples are organized according to Appendix S1 in Supporting Information.

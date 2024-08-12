@@ -334,7 +334,7 @@ cvlog <- cv4postpr(models, sust, nval=10, tol= 0.05, method="mnlogistic")
 summary(cvlog)
 
 # transformed dataset
-cvlogpca <- cv4postpr(models, pcasust, nval=10, tol 0.05), method="mnlogistic")
+cvlogpca <- cv4postpr(models, pcasust, nval=10, tol= 0.05, method="mnlogistic")
 summary(cvlogpca)
 
 # model selection using the algorithm with best performance according to cross-validation test 

@@ -85,11 +85,11 @@ parameters <- data.frame()
 for (i in 1:numsim) {
   
   ### Define parameters
-  # based on parameters estimated under multinomial logistic regression (MNLOG) with abc function (tolerance 0.05), minimum and maximum values correspond to 95% Quantile interval
+  # based on parameters estimated with abc function (tolerance 0.05), minimum and maximum values correspond to 95% Quantile interval
   Ne <- runif(1, 1313770.5703, 5976174.0839 )
-  # based on parameters estimated under multinomial logistic regression (MNLOG) with abc function (tolerance 0.05), minimum and maximum values correspond to 95% Quantile interval
+  # based on parameters estimated with abc function (tolerance 0.05), minimum and maximum values correspond to 95% Quantile interval
   thetamt <- runif(1, 1.9229, 121.1588)
-  # based on parameters estimated under multinomial logistic regression (MNLOG) with abc function (tolerance 0.05), minimum and maximum values correspond to 95% Quantile interval
+  # based on parameters estimated with abc function (tolerance 0.05), minimum and maximum values correspond to 95% Quantile interval
   thetanuc <- runif(1, 3.8535, 64.9567)
   # Prior for time of the most ancient event, follows a lognormal distribution with mean 14.9 and standard deviation 0.6,  which corresponds to mid-tertiary to late-tertiary/early-quaternary, 2 to 7 Mya, final plateau uplift (in years: 95% HPD= 1100000-7940000, median= 2960000)
   T3 <- rlnorm(1, 14.9, 0.6)

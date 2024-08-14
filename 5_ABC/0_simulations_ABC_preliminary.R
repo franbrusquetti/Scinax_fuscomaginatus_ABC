@@ -327,9 +327,9 @@ summary(cvlog)
 summary(cvrej) 
 summary(cvnn)
 
-# estimate parameters with algorithm, tolerance and summary statistics with best performance according to cross-validation test
-peMNLOG<-abc(emp, parameters, sust , tol = 0.05, method = "mnlogistic")
-summary(peMNLOG)
+# estimate parameters with tolerance and summary statistics with best performance according to cross-validation test
+peNN<-abc(emp, parameters, sust , tol = 0.05, method = "neuralnet")
+summary(peNN)
 
 
 

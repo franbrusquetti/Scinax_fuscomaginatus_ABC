@@ -86,12 +86,12 @@ names(sust_ref1) <- c("pi.m", "ss.m", "D.m","T.m", "TH.m","pi.v","ss.v","D.v","p
 ## load empirical data (emp; see the script 1_runms_final)
 
 ## perform abc for inferring the parameters
-peMNLOG<-abc(target=emp, param=parameters_ref1, sumstat=sust_ref1, tol=0.05, method="loclinear",transf=c("logit","logit","logit","logit", "logit","logit", "logit","logit", "logit", "logit"),logit.bounds = rbind(c(2477996, 5976161),c(19.15,64.95),c(31.74,121.15),c(0.16,0.95), c(0.16, 0.95),c(0.16,0.95), c(0.16, 0.95), c(0.002, 0.72), c(0.009, 1.05), c(0.02, 1.51)))
+peNN<-abc(target=emp, param=parameters_ref1, sumstat=sust_ref1, tol=0.05, method="neuralnet",transf=c("logit","logit","logit","logit", "logit","logit", "logit","logit", "logit", "logit"),logit.bounds = rbind(c(2477996, 5976161),c(19.15,64.95),c(31.74,121.15),c(0.16,0.95), c(0.16, 0.95),c(0.16,0.95), c(0.16, 0.95), c(0.002, 0.72), c(0.009, 1.05), c(0.02, 1.51)))
 
 ## sampling with replacement in the multivariate posterior distribution
-newsamp<-sample(1:(dim(peMNLOG$adj)[1]),size=simpost,replace=T,prob=peMNLOG$weights)
+newsamp<-sample(1:(dim(peNN$adj)[1]),size=simpost,replace=T,prob=peNN$weights)
 
-newsamp<-peMNLOG$adj[newsamp,]
+newsamp<-peNN$adj[newsamp,]
 
 ppc <- data.frame()
 

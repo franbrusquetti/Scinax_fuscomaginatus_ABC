@@ -23,7 +23,7 @@
      cleandata = 1    * remove sites with ambiguity data (1:yes, 0:no)?
 
     thetaprior = 3 0.2   # invgamma(a, b) for theta
-      tauprior = 3 0.001    # invgamma(a, b) for root tau & Dirichlet(a) for other tau's
+      tauprior = 3 0.01    # invgamma(a, b) for root tau & Dirichlet(a) for other tau's
 
      heredity = 2 heredity.txt
      locusrate = 1 0 0 5 iid # (1: estimate locus rates mui, mubar=1 fixed)

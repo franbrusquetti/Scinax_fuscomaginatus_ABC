@@ -6,8 +6,8 @@
       mcmcfile = mcmc1.txt
 
 * speciesdelimitation = 0 * fixed species tree
-* speciesdelimitation = 1 0 2   * species delimitation rjMCMC algorithm0 and finetune(e)
- speciesdelimitation = 1 1 2 0.5  * species delimitation rjMCMC algorithm1 finetune (a m)
+ speciesdelimitation = 1 0 2   * species delimitation rjMCMC algorithm0 and finetune(e)
+* speciesdelimitation = 1 1 2 0.5  * species delimitation rjMCMC algorithm1 finetune (a m)
           speciestree = 1 * species-tree by NNI
 
   speciesmodelprior = 1  * 0: uniform LH; 1:uniform rooted trees; 2: uniformSLH; 3: uniformSRooted

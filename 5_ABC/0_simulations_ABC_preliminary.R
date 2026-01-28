@@ -298,7 +298,7 @@ l<-rbind(l1,l2,l3)
 mit<-as.vector(c(36.266102, 133, 0.951737, 57.327119, -21.061017 ))
 names(mit) <- c("pi.m", "ss.m", "D.m", "T.m", "TH.m")
 
-emp<- data.frame(pi.m=tapply(l[,1], factor(rep(1:1, each=numloc)), mean,na.rm=T),
+emp<- data.frame(pi.m=tapply(l[,1]/Lnu, factor(rep(1:1, each=numloc)), mean,na.rm=T),
                  ss.m=tapply(l[,2], factor(rep(1:1, each=numloc)), mean,na.rm=T),
                  D.m=tapply(l[,3], factor(rep(1:1, each=numloc)), mean,na.rm=T),
                  T.m=tapply(l[,4], factor(rep(1:1, each=numloc)), mean,na.rm=T),
@@ -306,7 +306,7 @@ emp<- data.frame(pi.m=tapply(l[,1], factor(rep(1:1, each=numloc)), mean,na.rm=T)
                  pi.v=tapply(l[,1], factor(rep(1:1, each=numloc)), var,na.rm=T),
                  ss.v=tapply(l[,2], factor(rep(1:1, each=numloc)), var,na.rm=T),
                  D.v=tapply(l[,3], factor(rep(1:1, each=numloc)), var,na.rm=T),
-                 pi.m=mit[1],
+                 pi.m=mit[1]/Lmt,
                  ss.m=mit[2],
                  D.m=mit[3],
                  T.m=mit[4],
